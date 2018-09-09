@@ -1,0 +1,816 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+.padre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+
+.header {
+    height: 60vh;
+}
+
+.header:before {
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.sub-cabecera {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../../img/lideres/hands-1947915_1280.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+.sub-cabecera::before {
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.c-sub {
+    width: 80%;
+    top: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.c-sub h2 {
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    top: -50px;
+    opacity: 0;
+    -webkit-animation: texto-cabecera 2s .5s forwards;
+    animation: texto-cabecera 2s .5s forwards;
+}
+
+.c-sub h3 {
+    color: #fff;
+    font-size: 4em;
+    font-family: sans;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    opacity: 0;
+    -webkit-animation: texto-cabecera 2s 1s forwards;
+    animation: texto-cabecera 2s 1s forwards;
+}
+
+.c-sub img {
+    width: 180px;
+    margin-top: 50px;
+    opacity: 0;
+    -webkit-animation: texto-cabecera 2s 1.5s forwards;
+    animation: texto-cabecera 2s 1.5s forwards;
+}
+
+.sub-cabecera div:last-child {
+    width: 0%;
+    height: 5px;
+    background-color: #01affd;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    -webkit-animation: ralla 3s 2s forwards;
+    animation: ralla 3s 2s forwards;
+}
+
+.section-equipo {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+
+.c-article {
+    width: 80%;
+    margin: auto;
+}
+
+.section-equipo .c-article .indicador a {
+    color: #242424;
+    font-size: 1.1em;
+    text-decoration: none;
+    position: relative;
+    top: 32px;
+    left: -10px;
+}
+
+.section-equipo .c-article .indicador p {
+    color: #01affd;
+    font-size: 1.1em;
+    margin-left: 50px;
+    position: relative;
+    top: 10px;
+    left: -11px;
+}
+
+.section-equipo .c-article a:hover {
+    color: #01affd;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.section-equipo .c-article .pastor-erley {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.section-equipo .c-article .pastor-erley .img-erley {
+    width: 250px;
+    height: 80%;
+    background-image: url(../../img/portada/erley.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.section-equipo .c-article .pastor-erley .img-erley:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley {
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 10px
+}
+
+.section-equipo .c-article .pastor-erley .c-erley q {
+    color: #01affd;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley a {
+    color: #1c1c1c;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: solid 2px #1c1c1c;
+    border-radius: 5%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley a:hover {
+    color: #fff;
+    border: 2px solid #01affd;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 155px;
+    background: #01affd;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.section-equipo .c-article .pastor-erley .c-erley a:hover::before {
+    top: 0px;
+    right: 0px;
+}
+
+.section-equipo .c-article .pastor-david {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.section-equipo .c-article .pastor-david .img-david {
+    width: 250px;
+    height: 80%;
+    background-image: url(../../img/portada/david.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.section-equipo .c-article .pastor-david .img-david:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.section-equipo .c-article .pastor-david .c-david {
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-equipo .c-article .pastor-david .c-david h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-equipo .c-article .pastor-david .c-david h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 10px
+}
+
+.section-equipo .c-article .pastor-david .c-david q {
+    color: #01affd;
+}
+
+.section-equipo .c-article .pastor-david .c-david a {
+    color: #1c1c1c;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: solid 2px #1c1c1c;
+    border-radius: 5%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.section-equipo .c-article .pastor-david .c-david a:hover {
+    color: #fff;
+    border: 2px solid #01affd;
+}
+
+.section-equipo .c-article .pastor-david .c-david a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 155px;
+    bottom: 0px;
+    right: 0px;
+    background: #01affd;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.section-equipo .c-article .pastor-david .c-david a:hover::before {
+    top: 0px;
+    left: 0px;
+}
+
+.section-equipo .c-article .maestra-zaida {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.section-equipo .c-article .maestra-zaida .img-zaida {
+    width: 250px;
+    height: 80%;
+    background-image: url(../../img/portada/zaida.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.section-equipo .c-article .maestra-zaida .img-zaida:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida {
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 10px
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida q {
+    color: #01affd;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida a {
+    color: #1c1c1c;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: solid 2px #1c1c1c;
+    border-radius: 5%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida a:hover {
+    color: #fff;
+    border: 2px solid #01affd;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 155px;
+    background: #01affd;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.section-equipo .c-article .maestra-zaida .c-zaida a:hover::before {
+    top: 0px;
+    right: 0px;
+}
+
+.section-equipo .c-article .maestra-maria {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.section-equipo .c-article .maestra-maria .img-maria {
+    width: 250px;
+    height: 80%;
+    background-image: url(../../img/portada/maria.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.section-equipo .c-article .maestra-maria .img-maria:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria {
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 10px
+}
+
+.section-equipo .c-article .maestra-maria .c-maria q {
+    color: #01affd;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria a {
+    color: #1c1c1c;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: solid 2px #1c1c1c;
+    border-radius: 5%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria a:hover {
+    color: #fff;
+    border: 2px solid #01affd;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 155px;
+    bottom: 0px;
+    right: 0px;
+    background: #01affd;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.section-equipo .c-article .maestra-maria .c-maria a:hover::before {
+    top: 0px;
+    left: 0px;
+}
+
+.section-equipo .c-article .musica-marcelly {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.section-equipo .c-article .musica-marcelly .img-marcelly {
+    width: 250px;
+    height: 80%;
+    background-image: url(../../img/portada/marcelly%202.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.section-equipo .c-article .musica-marcelly .img-marcelly:hover {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+    -webkit-transition: .7s;
+    transition: .7s;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly {
+    height: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly h3 {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly h4 {
+    font-size: 1.3em;
+    font-weight: 100;
+    margin-top: 10px
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly q {
+    color: #01affd;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly a {
+    color: #1c1c1c;
+    font-size: 1.2em;
+    padding: 15px 20px;
+    margin-top: 25px;
+    border: solid 2px #1c1c1c;
+    border-radius: 5%;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly a:hover {
+    color: #fff;
+    border: 2px solid #01affd;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 155px;
+    background: #01affd;
+    z-index: -1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.section-equipo .c-article .musica-marcelly .c-marcelly a:hover::before {
+    top: 0px;
+    right: 0px;
+}
+
+/*ANIMACIONES*/
+@-webkit-keyframes ralla {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes ralla {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes texto-cabecera {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: -20px;
+        opacity: 1;
+    }
+}
+
+@keyframes texto-cabecera {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: -20px;
+        opacity: 1;
+    }
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 950px) {
+    .c-sub h3 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .c-sub h2 {
+        font-size: .9em;
+    } 
+    .c-sub h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .sub-cabecera div:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section-equipo {
+        padding-bottom: 100px;
+    }
+    .section-equipo .c-article .pastor-erley {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 500px;
+    }
+    .section-equipo .c-article .pastor-david{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 500px;
+    }
+    .section-equipo .c-article .maestra-zaida {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 500px;
+    }
+    .section-equipo .c-article .maestra-maria {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 500px;
+    }
+    .section-equipo .c-article .musica-marcelly {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 500px;
+    }
+    .section-equipo .c-article .pastor-erley .img-erley {
+        width: 200px;
+        height: 250px;
+    }
+    .section-equipo .c-article .pastor-david .img-david {
+        width: 200px;
+        height: 250px;
+    }
+    .section-equipo .c-article .maestra-zaida .img-zaida {
+        width: 200px;
+        height: 250px;
+    }
+    .section-equipo .c-article .maestra-maria .img-maria {
+        width: 200px;
+        height: 250px;
+    }
+    .section-equipo .c-article .musica-marcelly .img-marcelly {
+        width: 200px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .c-sub img {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
