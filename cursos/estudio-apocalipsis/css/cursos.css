@@ -1,0 +1,342 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+
+.header {
+    height: 60vh;
+}
+
+.header:before {
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: transparent;
+    z-index: -1;
+}
+
+.sub-cabecera {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../../../img/cursos/books-1149959_1280.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+/* .sub-cabecera::before {
+    content: "";
+    width: 100%;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+.c-sub {
+    width: 80%;
+    top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-sub h2 {
+    color: #fff;
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    top: -50px;
+    opacity: 0;
+    animation: texto-cabecera 2s .5s forwards;
+}
+
+.c-sub h3 {
+    color: #fff;
+    font-size: 4em;
+    font-family: sans;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: texto-cabecera 2s 1s forwards;
+}
+
+.c-sub img {
+    width: 180px;
+    margin-top: 50px;
+    opacity: 0;
+    animation: texto-cabecera 2s 1.5s forwards;
+}
+
+.sub-cabecera div:last-child {
+    width: 0%;
+    height: 5px;
+    background-color: #01affd;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    animation: ralla 3s 2s forwards;
+}
+
+.section-cursos {
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+
+.c-article {
+    width: 80%;
+    margin: auto;
+}
+
+.section-cursos .c-article .indicador a {
+    color: #242424;
+    font-size: 1.1em;
+    text-decoration: none;
+    position: relative;
+    top: 32px;
+    left: -10px;
+}
+
+.section-cursos .c-article .indicador p {
+    color: #01affd;
+    font-size: 1.1em;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    top: 10px;
+    left: -11px;
+}
+
+.section-cursos .c-article a:hover {
+    color: #01affd;
+    transition: .4s;
+}
+
+.section-cursos .c-article img {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.cont_cursos {
+    width: 100%;
+    padding-top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.cont_apoca {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 17px;
+    box-shadow: 5px 5px 15px 1px #888888bd;
+}
+
+.cont_portada {
+    width: 100%;
+    height: 60%;
+    background-image: url(../../img/cursos/jason-wong-305496-unsplash.jpg);
+    background-size: cover;
+    border-bottom: 2px solid #01affd;
+    border-radius: 17px 17px 0 0;
+}
+
+.cont_texto {
+    width: 100%;
+    height: 40%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cont_texto h2 {
+    color: rgb(73, 73, 73);
+    text-align: center;
+}
+
+.cont_texto p {
+    color: rgb(117, 117, 117);
+    text-align: center;
+}
+
+.cont_texto a {
+    color: #01affd;
+    text-decoration: none;
+}
+
+.scroll-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-content {
+    margin-top: 150px;
+    width: 50%;
+    display: flex;
+}
+
+.search-content input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    color: rgb(109, 109, 109);
+    font-weight: 400;
+}
+
+.search-content button {
+    border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 13px;
+    cursor: pointer;
+    transition: all .2s;
+    background: #01affd;
+    color: white;
+}
+
+.search-content button:hover {
+    background: #029ce4;
+}
+
+.loader-content {
+    position: relative;
+    bottom: 50px;
+  }
+
+  .pre-loader{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+  }
+
+  .pre-loader span{
+      height: 1em;
+      width: 1em;
+      background: white;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      animation: wave 2s ease-in-out infinite;
+  }
+
+  .pre-loader span:nth-child(1){
+      left: -3em;
+      animation-delay: 0s;
+  }
+
+  .pre-loader span:nth-child(2){
+      left: -1.5em;
+      animation-delay: 0.1s;
+  }
+
+  .pre-loader span:nth-child(3){
+      left: 0em;
+      animation-delay: 0.2s;
+  }
+
+  .pre-loader span:nth-child(4){
+      left: 1.5em;
+      animation-delay: 0.3s;
+  }
+
+  @keyframes wave{
+    0%,
+    75%,
+    100%{
+        transform: translateY(0) scale(1);
+        background: rgb(255, 255, 255);
+    }
+    
+    25%{
+        transform: translateY(1em);
+    }
+    
+    50%{
+        transform: translateY(-1em) scale(1.1);
+        background: rgb(163, 163, 163);
+    }
+    
+}
+
+.hidden {
+  display: none;
+}
+
+/*ANIMACIONES*/
+@keyframes ralla {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes texto-cabecera {
+    from {
+        top: -50px;
+        opacity: 0;
+    }
+    to {
+        top: -20px;
+        opacity: 1;
+    }
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 950px) {
+    .c-sub h3 {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .c-sub h2 {
+        font-size: .9em;
+    } 
+    .c-sub h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    .sub-cabecera div:last-child {
+        display: none;
+    }
+    .cont_apoca {
+        width: 90%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 17px;
+        box-shadow: 5px 5px 15px 1px #888888bd;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .c-sub img {
+        width: 70%;
+    }
+}
