@@ -1,6 +1,11 @@
 //JSON de videos
 const listVideos = [
     {
+        titulo: 'Reflexión | La unión con Cristo',
+        predicador: 'David Garro H',
+        link: 'https://www.youtube.com/embed/Xco4WkEESqs'
+    },
+    {
         titulo: 'Elisabet Esposa de Zacarías',
         predicador: 'Erley Sobalbarro',
         link: 'https://www.youtube.com/embed/EVAAUzlAA3w'
